@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1> movi information</h1>
+    {% if movies_list %}
+    <table border=2>
+    <thead>
+
+        <th> hero</th>
+
+        </thead>
+        {% for movie in movies_list %}
+        <tr>
+
+        <td>{{movie.hero}}</td>
+
+        </tr>
+        {% endfor %}
+        </table>
+        {% else %}
+        <p> no information</p>
+        {% endif %}
+
+  </body>
+</html>

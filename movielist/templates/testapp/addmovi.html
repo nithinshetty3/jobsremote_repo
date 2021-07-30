@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+{% comment %} {% load static %} {% endcomment %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    {% comment %} <link rel="stylesheet" href="{% static "css/movie.css" %}"> {% endcomment %}
+  </head>
+  <body>
+    <h1>add movie information</h1><hr>
+    <form method="post":
+    {{form.as_p}}
+    {% csrf_token %}
+    <input type="submit" class="btn btn-primary" value="submit">
+    </form>
+  </body>
+</html>
